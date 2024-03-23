@@ -18,7 +18,7 @@ Pred spustením projektu sa uistite, že máte nainštalované nasledujúce prog
     * Návod na inštaláciu dostupný tu https://www.youtube.com/watch?v=J8ZPZq_34aY
 
 ## Inštalácia
-1. Skopírujte si projekt z GitHubu na svoj počítač.
+1. Skopírujte si projekt z GitHubu do svojho počítača.
 2. Otvorte terminál/príkazový riadok a prejdite do priečinka s projektom.
 3. Nainštalujte Python knižnicu *virtualenv* príkazom:
 ```
@@ -42,11 +42,15 @@ cmd.exe
 ```
 <venv>\Scripts\activate.bat
 ```
-6. Nainštalujte potrebné knižnice definované s konkrétnymi verziami v rámci requirements.txt príkazom:
+6. Upgrade knižnice *pip* príkazom:
+```
+python -m pip install --upgrade pip
+```
+7. Nainštalujte potrebné knižnice definované s konkrétnymi verziami v rámci requirements.txt príkazom:
 ```
 pip install -r requirements.txt
 ```
-6. Vykonajte inicializáciu robotframework-browser knižnice príkazom:
+8. Vykonajte inicializáciu robotframework-browser knižnice príkazom:
 ```
 rfbrowser init
 ```
